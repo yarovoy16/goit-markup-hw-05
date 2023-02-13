@@ -94,8 +94,6 @@ img{
   color: var(--NAVY-BLUE);
   padding-top: 24px;
   padding-bottom: 24px;
-  
-  /* outline: 1px solid tomato; */
   display: block;
 
 
@@ -106,14 +104,18 @@ img{
 .adress-header:focus{
   color: var(--Ocean);
 }
-.link-current{
-  color: var(--Iris);
-  border-bottom: 3px solid var(--Ocean);
-  border-radius: 2px;
-}
+
 .line {
   border-bottom: 1px solid #E7E9FC;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.link-current::after{
+  content: "";
+  border-bottom: 2px solid var(--Ocean);
+  border-radius: 2px;
+  display: block;
+
+
 }
 /* Hero */
 .section-hero {
@@ -429,13 +431,14 @@ img{
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.04em;
+
+  cursor: pointer;
 }
 .btn-main:hover{
   background-color: var(--Iris);
   color: white;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-  border: var(--CLOUD)
+  border-color: var(--Iris);
 }
 /* Examples */
 .flex-examples{
