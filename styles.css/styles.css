@@ -565,7 +565,6 @@ img{
 .link-examples {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   display: block;
-  position: relative;
   
 }
 
@@ -581,10 +580,12 @@ img{
   overflow: hidden;
 
 }
-.box-thumb::before{
+.product-overlay{
   position: absolute;
-  content: "";
-  display: inline-block;
+  /* content: "";
+  display: inline-block; */
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color:rgba(77, 90, 229, 0.9);
@@ -594,11 +595,18 @@ img{
   /* transform-origin: right;
   transform: scaleX(0); */
 }
-.box-thumb:hover::before{
+.box-thumb:hover .product-overlay{
   opacity: 1;
   transform: translateX(0);
   /* transform: scaleX(1); */
 }
+.text-overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 
 /* modal */
 .backdrop{
@@ -610,7 +618,7 @@ img{
   height: 100%;
 }
 .backdrop.is-hidden{
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
 }
 .modal{
