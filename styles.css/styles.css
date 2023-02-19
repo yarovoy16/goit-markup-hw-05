@@ -618,7 +618,7 @@ img{
   height: 100%;
 }
 .backdrop.is-hidden{
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
 }
 .modal{
