@@ -96,7 +96,7 @@ img{
   padding-bottom: 24px;
   display: block;
 
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 .link-header:hover,
 .link-header:focus,
@@ -188,7 +188,10 @@ img{
   font-weight: 500;
   font-size: 16px;
   border: none;
-  
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .button-hero:hover{
@@ -330,6 +333,8 @@ img{
 
   justify-content: center;
   align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-icon:hover{
   background-color: var(--Ocean);
@@ -356,6 +361,9 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .icon-customers{
@@ -422,6 +430,7 @@ img{
 }
 .bg-footer-icon{
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bg-footer-icon:hover{
   background-color: var(--GREEN);
@@ -454,6 +463,11 @@ img{
   letter-spacing: 0.04em;
 
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-main:hover{
   background-color: var(--Iris);
@@ -493,6 +507,8 @@ img{
 .link-examples {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
@@ -520,9 +536,10 @@ img{
   background-color:rgba(77, 90, 229, 0.9);
   opacity: 1;
   transform: translateY(110%);
-  transition: transform 250ms cubic-bezier(0.4,0,0.2,1);
   transform-origin: bottom;
 
+  transition: transform 250ms cubic-bezier(0.4,0,0.2,1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-examples:hover .product-overlay{
   opacity: 1;
@@ -556,6 +573,7 @@ img{
   height: 100%;
   opacity: 1;
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 .backdrop.is-hidden{
   opacity: 0;
@@ -563,7 +581,7 @@ img{
   visibility: hidden;
 }
 .backdrop.is-hidden .modal {
-  transform:translate(-50%, -50%) scale(1.1)
+  transform:translate(-50%, -50%) scale(1.1);
 }
 
 .modal{
@@ -598,12 +616,11 @@ img{
 
   background-color:var(--CORNFLOWER);
   border-radius: 50px;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-
 }
-/* .text-modal{
+.text-modal{
   margin: 50% auto;
-} */
+}
 
 
