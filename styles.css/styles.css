@@ -72,6 +72,8 @@ img{
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--SLATE);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -96,7 +98,7 @@ img{
   padding-bottom: 24px;
   display: block;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-header:hover,
 .link-header:focus,
@@ -318,14 +320,12 @@ img{
 }
 
 .socials-icon{
-  width: 20px;
-  height: 20px;
   fill:var(--CLOUD);
 }
 .link-icon{
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
 
   background-color: var(--Iris);
   border-radius: 50%;
